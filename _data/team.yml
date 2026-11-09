@@ -1,0 +1,23 @@
+# Team members — names, roles and IAA licence numbers to be provided by owner (OQ-012)
+# Placeholder structure below
+
+- name: "[Principal Adviser — name TBC]"
+  role: Principal Licensed Immigration Adviser
+  qualifications: "[Qualifications TBC]"
+  licence_number: "[IAA Licence No. TBC]"
+  bio: "Our Principal Adviser brings decades of experience in New Zealand immigration law and has helped thousands of clients achieve residence. Please contact us for more information."
+  location: Nelson
+
+- name: "[Licensed Adviser — name TBC]"
+  role: Licensed Immigration Adviser
+  qualifications: "[Qualifications TBC]"
+  licence_number: "[IAA Licence No. TBC]"
+  bio: "With extensive experience in skilled migrant and employer-sponsored visa categories."
+  location: Wellington
+
+- name: "[Job Search Consultant — name TBC]"
+  role: Job Search Consultant
+  qualifications: "[Qualifications TBC]"
+  licence_number: null
+  bio: "Specialises in helping internationally trained professionals find employment in New Zealand, including access to the hidden job market."
+  location: Nelson

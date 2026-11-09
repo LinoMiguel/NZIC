@@ -1,0 +1,10 @@
+# Office details — addresses to be confirmed by owner
+- name: Nelson
+  address: "[Street address TBC], Nelson, New Zealand"
+  hours: "Monday–Friday: 9:00 am – 5:00 pm NZ time"
+  maps_url: "https://maps.google.com/?q=Nelson+New+Zealand"
+
+- name: Wellington
+  address: "[Street address TBC], Wellington, New Zealand"
+  hours: "Monday–Friday: 9:00 am – 5:00 pm NZ time"
+  maps_url: "https://maps.google.com/?q=Wellington+New+Zealand"

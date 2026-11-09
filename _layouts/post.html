@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      <li><a href="{{ '/news' | relative_url }}">News</a></li>
+      <li><span aria-current="page">{{ page.title }}</span></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="section">
+  <div class="content-container">
+    <div style="margin-bottom:2rem;">
+      {% if page.tags %}<span class="news-tag">{{ page.tags | first }}</span>{% endif %}
+      <h1 style="font-family:var(--font-heading);font-size:clamp(1.6rem,3.5vw,2.4rem);font-weight:700;color:var(--navy);margin:1rem 0 .5rem;line-height:1.15;">{{ page.title }}</h1>
+      {% if page.date %}<p style="font-size:.88rem;color:var(--text-muted);">{{ page.date | date: "%-d %B %Y" }}</p>{% endif %}
+    </div>
+    <div class="prose">{{ content }}</div>
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);text-align:center;">
+      <a class="btn btn-primary" href="{{ '/free-assessment' | relative_url }}">Get Your Free Assessment</a>
+      <p style="margin-top:1rem;font-size:.88rem;color:var(--text-muted);">Questions about how this affects your situation? Speak with a licensed adviser.</p>
+    </div>
+  </div>
+</div>

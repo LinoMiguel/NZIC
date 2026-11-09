@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      <li><a href="{{ '/job-search/browse-jobs' | relative_url }}">Browse Jobs</a></li>
+      <li><span aria-current="page">{{ page.title }}</span></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="section">
+  <div class="content-container">
+    <div class="job-detail-header" style="margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:2px solid var(--border);">
+      <h1 style="font-family:var(--font-heading);font-size:clamp(1.5rem,3vw,2.2rem);font-weight:700;color:var(--navy);margin-bottom:.75rem;">{{ page.title }}</h1>
+      <dl style="display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:12px;">
+        {% if page.employer %}<div><dt style="font-size:.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Employer</dt><dd style="font-weight:600;color:var(--text);">{{ page.employer }}</dd></div>{% endif %}
+        {% if page.sector %}<div><dt style="font-size:.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Sector</dt><dd><span class="job-tag">{{ page.sector }}</span></dd></div>{% endif %}
+        {% if page.location %}<div><dt style="font-size:.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Location</dt><dd>{{ page.location }}</dd></div>{% endif %}
+        {% if page.date_listed %}<div><dt style="font-size:.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Listed</dt><dd>{{ page.date_listed }}</dd></div>{% endif %}
+      </dl>
+    </div>
+    <div class="prose">{{ content }}</div>
+    <div style="margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border);">
+      <h2 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:1rem;">Enquire about this role</h2>
+      <form action="https://formspree.io/f/REPLACE_ME" method="POST" enctype="multipart/form-data" class="form-section" style="max-width:560px;">
+        <input type="hidden" name="job_title" value="{{ page.title }}">
+        <input type="hidden" name="job_reference" value="{{ page.slug | default: page.url }}">
+        <div class="form-group"><label class="form-label" for="eq-name">Name <span class="req" aria-hidden="true">*</span></label><input class="form-input" type="text" id="eq-name" name="name" required></div>
+        <div class="form-group"><label class="form-label" for="eq-email">Email <span class="req" aria-hidden="true">*</span></label><input class="form-input" type="email" id="eq-email" name="email" required></div>
+        <div class="form-group"><label class="form-label" for="eq-cv">CV (optional, max 10 MB)</label><input class="form-input" type="file" id="eq-cv" name="cv" accept=".pdf,.doc,.docx" data-max-mb="10"><div class="form-error">Max file size is 10 MB</div></div>
+        <div class="form-group"><label class="form-label" for="eq-msg">Message</label><textarea class="form-textarea" id="eq-msg" name="message" rows="4"></textarea></div>
+        <button class="btn btn-primary" type="submit">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+</div>

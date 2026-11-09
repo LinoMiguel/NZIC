@@ -1,0 +1,33 @@
+---
+layout: default
+---
+{% if page.show_breadcrumbs != false %}
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      {% if page.breadcrumb_parent %}
+      <li><a href="{{ page.breadcrumb_parent_url | relative_url }}">{{ page.breadcrumb_parent }}</a></li>
+      {% endif %}
+      <li><span aria-current="page">{{ page.title }}</span></li>
+    </ol>
+  </div>
+</nav>
+{% endif %}
+
+{% if page.hero_title or page.title %}
+<div class="page-hero">
+  <div class="container">
+    <h1>{{ page.hero_title | default: page.title }}</h1>
+    {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+  </div>
+</div>
+{% endif %}
+
+<div class="section">
+  <div class="container">
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</div>

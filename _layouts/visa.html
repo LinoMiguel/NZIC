@@ -1,0 +1,33 @@
+---
+layout: default
+---
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      <li><a href="{{ '/visa' | relative_url }}">Visa Service</a></li>
+      <li><span aria-current="page">{{ page.title }}</span></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+    {% if page.lead %}<p class="lead">{{ page.lead }}</p>{% endif %}
+  </div>
+</div>
+
+<div class="section">
+  <div class="content-container">
+    {% if page.last_reviewed %}
+    <div class="last-reviewed">
+      📅 Last reviewed: {{ page.last_reviewed }}
+      {% if page.inz_source %} · <a href="{{ page.inz_source }}" target="_blank" rel="noopener noreferrer">Official INZ source ↗</a>{% endif %}
+    </div>
+    {% endif %}
+    <div class="prose">
+      {{ content }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol>
+      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      <li><a href="{{ '/job-search/browse-candidates' | relative_url }}">Talent Pool</a></li>
+      <li><span aria-current="page">{{ page.occupation }}</span></li>
+    </ol>
+  </div>
+</nav>
+
+<div class="section">
+  <div class="content-container">
+    <div class="candidate-profile-header" style="margin-bottom:2rem;padding-bottom:1.5rem;border-bottom:2px solid var(--border);">
+      <h1 style="font-family:var(--font-heading);font-size:clamp(1.5rem,3vw,2rem);font-weight:700;color:var(--navy);margin-bottom:.75rem;">{{ page.occupation }}</h1>
+      <div class="candidate-tags" style="margin-bottom:12px;">{% for tag in page.sectors %}<span class="candidate-tag">{{ tag }}</span>{% endfor %}</div>
+      <dl style="display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px;font-size:.9rem;">
+        {% if page.experience_years %}<div><dt style="font-size:.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Experience</dt><dd>{{ page.experience_years }} years</dd></div>{% endif %}
+        {% if page.qualifications %}<div><dt style="font-size:.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Qualifications</dt><dd>{{ page.qualifications }}</dd></div>{% endif %}
+        {% if page.candidate_id %}<div><dt style="font-size:.8rem;color:var(--text-muted);font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:2px;">Candidate ID</dt><dd class="candidate-id">{{ page.candidate_id }}</dd></div>{% endif %}
+      </dl>
+    </div>
+    {% if content and content != '' %}<div class="prose" style="margin-bottom:2rem;">{{ content }}</div>{% endif %}
+    <div style="margin-top:2rem;padding-top:2rem;border-top:1px solid var(--border);">
+      <h2 style="font-family:var(--font-heading);font-size:1.3rem;font-weight:700;color:var(--navy);margin-bottom:1rem;">Interested in this candidate?</h2>
+      <form action="https://formspree.io/f/REPLACE_ME" method="POST" class="form-section" style="max-width:560px;">
+        <input type="hidden" name="candidate_id" value="{{ page.candidate_id }}">
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="ci-name">Your Name <span class="req" aria-hidden="true">*</span></label><input class="form-input" type="text" id="ci-name" name="name" required></div>
+          <div class="form-group"><label class="form-label" for="ci-company">Company <span class="req" aria-hidden="true">*</span></label><input class="form-input" type="text" id="ci-company" name="company" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-group"><label class="form-label" for="ci-role">Your Role <span class="req" aria-hidden="true">*</span></label><input class="form-input" type="text" id="ci-role" name="your_role" required></div>
+          <div class="form-group"><label class="form-label" for="ci-email">Email <span class="req" aria-hidden="true">*</span></label><input class="form-input" type="email" id="ci-email" name="email" required></div>
+        </div>
+        <div class="form-group"><label class="form-label" for="ci-phone">Phone</label><input class="form-input" type="tel" id="ci-phone" name="phone"></div>
+        <div class="form-group"><label class="form-label">Are you an accredited employer?</label><div style="display:flex;gap:16px;margin-top:4px;"><label><input type="radio" name="accredited" value="Yes"> Yes</label><label><input type="radio" name="accredited" value="No"> No</label><label><input type="radio" name="accredited" value="Not sure"> Not sure</label></div></div>
+        <div class="form-group"><label class="form-label" for="ci-msg">Message <span class="req" aria-hidden="true">*</span></label><textarea class="form-textarea" id="ci-msg" name="message" required rows="4"></textarea></div>
+        <button class="btn btn-primary" type="submit">Express Interest</button>
+      </form>
+    </div>
+  </div>
+</div>

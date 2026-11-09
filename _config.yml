@@ -1,5 +1,5 @@
-title: NZIC — New Zealand Immigration Consultancy
-description: Expert New Zealand immigration advice and visa services.
+title: NZIC — New Zealand Immigration Concepts Ltd
+description: Expert New Zealand immigration advice and visa services since 1995.
 url: "https://linomiguel.github.io"
 baseurl: "/NZIC"
 
@@ -7,11 +7,49 @@ baseurl: "/NZIC"
 markdown: kramdown
 highlighter: rouge
 
-# GitHub Pages native plugins
+# Plugins
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+
+# Collections
+collections:
+  visa_articles:
+    output: true
+    permalink: /visa/:name/
+  job_listings:
+    output: true
+    permalink: /jobs/:name/
+  candidates:
+    output: true
+    permalink: /job-seeker/:name/
+  news_posts:
+    output: true
+    permalink: /news/:name/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "visa_articles"
+    values:
+      layout: visa
+  - scope:
+      path: ""
+      type: "job_listings"
+    values:
+      layout: job
+  - scope:
+      path: ""
+      type: "candidates"
+    values:
+      layout: candidate
+  - scope:
+      path: ""
+      type: "news_posts"
+    values:
+      layout: post
 
 # Exclude from build
 exclude:
