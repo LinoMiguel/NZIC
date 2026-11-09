@@ -23,10 +23,12 @@ show_breadcrumbs: false
           <a class="btn btn-outline" href="{{ '/job-search/our-job-search-service' | relative_url }}">FIND A JOB IN NEW ZEALAND</a>
         </div>
       </div>
-      <div class="hero-image-stack" aria-hidden="true">
-        <div class="hero-placeholder">&#127807;</div>
-        <div class="hero-placeholder">&#127956;</div>
-        <div class="hero-placeholder">&#127754;</div>
+      <div class="hero-slideshow" aria-hidden="true">
+        <div class="hero-slide active" style="background-image:url('{{ '/assets/images/hero-1.webp' | relative_url }}')"></div>
+        <div class="hero-slide" style="background-image:url('{{ '/assets/images/hero-2.webp' | relative_url }}')"></div>
+        <div class="hero-slide" style="background-image:url('{{ '/assets/images/hero-3.jpg' | relative_url }}')"></div>
+        <div class="hero-slide" style="background-image:url('{{ '/assets/images/hero-4.webp' | relative_url }}')"></div>
+        <div class="hero-slide" style="background-image:url('{{ '/assets/images/hero-5.webp' | relative_url }}')"></div>
       </div>
     </div>
   </div>
@@ -36,7 +38,7 @@ show_breadcrumbs: false
 <section class="section-sm" style="background:var(--bg-light);border-bottom:1px solid var(--border);">
   <div class="container">
     <div class="iaa-badge">
-      <div class="iaa-badge-icon" aria-hidden="true">&#127963;</div>
+      <img class="iaa-badge-img" src="{{ '/assets/images/iaa-badge.webp' | relative_url }}" alt="Immigration Advisers Authority licensed badge" width="80" height="80" loading="lazy">
       <div class="iaa-badge-content">
         <h2>Licensed by the Immigration Advisers Authority</h2>
         <p>All immigration advice at NZIC is given by Licensed Immigration Advisers registered with the IAA. This is a legal requirement under the Immigration Advisers Licensing Act 2007.</p>

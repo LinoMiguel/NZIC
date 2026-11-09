@@ -129,6 +129,7 @@ input, select, textarea { font-family: inherit; }
   letter-spacing: -.5px;
 }
 .site-logo strong { color: var(--orange); }
+.site-logo img { height: 40px; width: auto; display: block; }
 
 /* Main nav */
 .main-nav { flex: 1; display: flex; justify-content: center; }
@@ -305,6 +306,20 @@ input, select, textarea { font-family: inherit; }
   display: flex; align-items: center; justify-content: center;
   font-size: 2rem; color: var(--border);
 }
+
+/* Hero slideshow */
+.hero-slideshow {
+  position: relative; border-radius: var(--radius-md);
+  overflow: hidden; aspect-ratio: 4/3;
+  box-shadow: 0 8px 32px rgba(13,66,146,.18);
+}
+.hero-slide {
+  position: absolute; inset: 0;
+  background-size: cover; background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+.hero-slide.active { opacity: 1; }
 
 /* --- Service Cards ----------------------------------------- */
 .service-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -607,6 +622,7 @@ input, select, textarea { font-family: inherit; }
   display: flex; align-items: flex-start; gap: 16px; margin: 2rem 0;
 }
 .iaa-badge-icon { font-size: 2.5rem; flex-shrink: 0; }
+.iaa-badge-img { width: 72px; height: 72px; flex-shrink: 0; object-fit: contain; border-radius: var(--radius-sm); }
 .iaa-badge-content h3 { font-family: var(--font-heading); font-size: 1rem; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
 .iaa-badge-content p { font-size: .88rem; color: var(--text-muted); line-height: 1.5; }
 .iaa-licence-list { display: flex; flex-direction: column; gap: 4px; margin-top: 8px; }
@@ -683,6 +699,12 @@ input, select, textarea { font-family: inherit; }
   display: flex; align-items: center; justify-content: center;
   font-size: 2.5rem; border: 3px solid var(--border);
 }
+.team-photo {
+  width: 120px; height: 120px; border-radius: 50%;
+  object-fit: cover; object-position: top center;
+  margin: 0 auto 1rem; display: block;
+  border: 3px solid var(--orange);
+}
 .team-name { font-family: var(--font-heading); font-size: 1.1rem; font-weight: 700; color: var(--navy); margin-bottom: 2px; }
 .team-role { font-size: .88rem; color: var(--orange); font-weight: 600; margin-bottom: 8px; }
 .team-quals { font-size: .82rem; color: var(--text-muted); margin-bottom: 8px; }
@@ -752,6 +774,7 @@ input, select, textarea { font-family: inherit; }
   .pillars-grid { grid-template-columns: 1fr 1fr; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-image-stack { display: none; }
+  .hero-slideshow { aspect-ratio: 16/9; }
   .hero-h1 { font-size: clamp(2rem, 5vw, 3rem); }
   .testimonials-grid { grid-template-columns: 1fr; }
   .process-steps { grid-template-columns: 1fr; gap: 24px; }

@@ -28,7 +28,7 @@ breadcrumb_parent_url: /about/who-we-are
 <section class="section-sm section-bg-light">
   <div class="container">
     <div class="iaa-badge">
-      <div class="iaa-badge-icon" aria-hidden="true">&#127963;</div>
+      <img class="iaa-badge-img" src="{{ '/assets/images/iaa-badge.webp' | relative_url }}" alt="Immigration Advisers Authority licensed badge" width="80" height="80" loading="lazy">
       <div class="iaa-badge-content">
         <h2>Licensed by the Immigration Advisers Authority</h2>
         <p>Under the Immigration Advisers Licensing Act 2007, all immigration advice in New Zealand must come from a Licensed Immigration Adviser, a lawyer, or a barrister. NZIC's advisers hold current IAA licences.</p>
@@ -131,7 +131,11 @@ breadcrumb_parent_url: /about/who-we-are
     <div class="team-grid">
       {% for member in site.data.team %}
       <div class="team-card">
+        {% if member.photo %}
+        <img class="team-photo" src="{{ member.photo | relative_url }}" alt="Photo of {{ member.name }}" width="200" height="200" loading="lazy">
+        {% else %}
         <div class="team-avatar" aria-hidden="true">&#128100;</div>
+        {% endif %}
         <div class="team-name">{{ member.name }}</div>
         <div class="team-role">{{ member.role }}</div>
         {% if member.licence_number %}
