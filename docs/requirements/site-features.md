@@ -294,8 +294,8 @@ Infrastructure-level performance, browser support, HTTPS, analytics, and baselin
 | Team profiles (name, role, qualifications, photo) | REQ-260 | Owner | Not provided |
 | Company history milestones and founding year | REQ-260, REQ-110 | Owner | Not provided (reference site contradicts itself: 1994 vs 1995) |
 | Office addresses and hours | REQ-265 | Owner | Not provided |
-| Visa policy articles (about 30) | REQ-150 to REQ-161 | Owner / licensed adviser | Reuse depends on OQ-001. Every figure needs re-checking against INZ. |
-| Job-search articles (about 22) and FAQs (about 12) | REQ-180 | Owner / job search team | Reuse depends on OQ-001 |
+| Visa policy articles (about 30) | REQ-150 to REQ-161 | Owner / licensed adviser | ✅ May be reused (OQ-001 resolved). Every figure needs re-checking against INZ. |
+| Job-search articles (about 22) and FAQs (about 12) | REQ-180 | Owner / job search team | ✅ May be reused (OQ-001 resolved) |
 | Job listings | REQ-200 onward | NZIC staff | Ongoing; process undecided (OQ-005) |
 | Candidate profiles and consent records | REQ-215 onward | NZIC staff with candidate consent | Undecided (OQ-008) |
 | Investment opportunities | REQ-251 onward | Owner | Undecided; legal review advised (OQ-018) |
@@ -310,7 +310,7 @@ Infrastructure-level performance, browser support, HTTPS, analytics, and baselin
 
 ## Open questions
 
-1. **OQ-001 — Relationship to the reference site (blocking).** The brief describes NZIC as "New Zealand Immigration Consultancy". The reference site belongs to New Zealand Immigration Concepts Ltd, which also abbreviates itself "NZIC". Its team page lists a Lino Miguel (Job Search Adviser, Engineering), and the repository's git user is "Lino". Is this project a rebuild of New Zealand Immigration Concepts' own site, or a separate business using it as inspiration? If it is the same business, text, testimonials, team profiles, and licence numbers can be reused (with the owners' sign-off), and old URLs should redirect. If it is a separate business, none of that content, the testimonials, or the licence numbers may be reused, and every content item in the table above must be written from scratch. **Decision: business owner.**
+1. **OQ-001 — Relationship to the reference site.** ✅ RESOLVED — This is a rebuild of New Zealand Immigration Concepts Ltd's own site. Existing text, testimonials, team profiles, adviser licence numbers, and other content may be reused with the owner's sign-off. Old URLs should redirect where possible (see OQ-015 for the GitHub Pages redirect constraint).
 2. **OQ-002 — Trading name.** Which exact legal or trading name goes in the header, footer, copyright line, and Privacy Policy? **Decision: business owner.**
 3. **OQ-003 — Release scope.** Should the first public release include the full site, or a smaller first release (for example: homepage, Free Assessment, visa service, about/team, contact, legal), with the Job Portal, Invest, and News following later? **Decision: business owner.**
 4. **OQ-004 — Framework conflict with infrastructure doc.** The latest commit (`703568f`, "Scale back to plain HTML hello world, remove Astro") contradicts infrastructure OQ-006 ("Astro confirmed"). Plain HTML makes about 70 content pages and structured listings (jobs, candidates, news) hard to maintain. Which is current? **Decision: developer / owner. The infrastructure doc should be updated either way.**
@@ -348,4 +348,5 @@ Infrastructure-level performance, browser support, HTTPS, analytics, and baselin
 
 ## Changelog
 
-- 2026-11-09 — Initial draft. Reverse-engineered from new-zealand-immigration.com (about 28 pages sampled). REQ-100 to REQ-335 defined. 21 open questions raised, including a blocking question (OQ-001) on whether this is the same business as the reference site, and a framework conflict with the infrastructure doc (OQ-004).
+- 2026-11-09 — Initial draft. Reverse-engineered from new-zealand-immigration.com (about 28 pages sampled). REQ-100 to REQ-335 defined. 21 open questions raised.
+- 2026-11-09 — OQ-001 resolved: confirmed this is a rebuild of New Zealand Immigration Concepts Ltd's own site. Existing content may be reused.
