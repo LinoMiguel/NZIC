@@ -1,29 +1,79 @@
 <footer class="site-footer">
   <div class="container">
-    <div class="footer-top">
-      <a class="footer-logo" href="{{ '/' | relative_url }}" aria-label="NZIC home">
-        NZ<strong>IC</strong>
-      </a>
-      <nav class="footer-nav-links" aria-label="Footer navigation">
-        <a href="{{ '/visa' | relative_url }}">Visa Service</a>
-        <a href="{{ '/job-search' | relative_url }}">Job Seekers</a>
-        <a href="{{ '/job-search/browse-jobs' | relative_url }}">Job Portal</a>
-        <a href="{{ '/job-search/accredited-employers' | relative_url }}">Employers</a>
-        <a href="{{ '/about/who-we-are' | relative_url }}">About</a>
-      </nav>
+
+    <div class="footer-columns" style="display:grid;grid-template-columns:repeat(4,1fr);gap:2.5rem;padding:3rem 0 2rem;">
+
+      <!-- Column 1: Our Visa Service -->
+      <div>
+        <div class="footer-col-heading" style="font-family:var(--font-heading);font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:.95rem;text-transform:uppercase;letter-spacing:.05em;">Our Visa Service</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem;">
+          <li><a href="{{ '/visa/our-visa-service' | relative_url }}">Visa Assistance</a></li>
+          <li><a href="{{ '/visa/are-you-eligible-to-migrate-to-nz' | relative_url }}">Do you want to move to New Zealand?</a></li>
+          <li><a href="{{ '/visa/skilled-migrant-category' | relative_url }}">Skilled Migrant Category</a></li>
+          <li><a href="{{ '/visa/the-green-list' | relative_url }}">Skill Shortages — The Green List</a></li>
+          <li><a href="{{ '/visa/pathways-to-residence' | relative_url }}">Pathways to Residence</a></li>
+          <li><a href="{{ '/visa/partnership-visas' | relative_url }}">Partnership Visas</a></li>
+          <li><a href="{{ '/retirement-in-new-zealand/' | relative_url }}">Retirement in New Zealand</a></li>
+          <li><a href="{{ '/investment/' | relative_url }}">Investor and Business Migration</a></li>
+          <li><a href="{{ '/visa/' | relative_url }}">View All</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 2: Our Job Seeker Service -->
+      <div>
+        <div class="footer-col-heading" style="font-family:var(--font-heading);font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:.95rem;text-transform:uppercase;letter-spacing:.05em;">Our Job Seeker Service</div>
+        <div style="font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-bottom:.5rem;">Get a Visa for New Zealand</div>
+        <ul style="list-style:none;padding:0;margin:0 0 1rem;display:flex;flex-direction:column;gap:.5rem;">
+          <li><a href="{{ '/job-search/our-job-search-service' | relative_url }}">Job Seeker Assistance</a></li>
+          <li><a href="{{ '/job-search/hidden-job-market' | relative_url }}">The Hidden Job Market</a></li>
+          <li><a href="{{ '/job-search/the-catch-22' | relative_url }}">Job Seeking and the Catch-22</a></li>
+          <li><a href="{{ '/job-search/job-board' | relative_url }}">The NZIC Job Portal</a></li>
+          <li><a href="{{ '/job-search/engineers' | relative_url }}">Job Search for Engineers</a></li>
+          <li><a href="{{ '/job-search/health-professionals' | relative_url }}">Job Search for Health Professionals</a></li>
+        </ul>
+        <div style="font-size:.8rem;text-transform:uppercase;letter-spacing:.05em;color:var(--text-muted);margin-bottom:.5rem;">Find a Job in New Zealand</div>
+        <ul style="list-style:none;padding:0;margin:0 0 1rem;display:flex;flex-direction:column;gap:.5rem;">
+          <li><a href="{{ '/job-search/browse-jobs' | relative_url }}">Browse Jobs</a></li>
+          <li><a href="{{ '/job-search/browse-candidates' | relative_url }}">Browse Candidates</a></li>
+        </ul>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem;">
+          <li><a href="{{ '/about/fusion-service' | relative_url }}">Our Fusion Service</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Our Job Portal -->
+      <div>
+        <div class="footer-col-heading" style="font-family:var(--font-heading);font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:.95rem;text-transform:uppercase;letter-spacing:.05em;">Our Job Portal</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem;">
+          <li><a href="{{ '/job-search/browse-candidates' | relative_url }}">The NZIC Talent Pool</a></li>
+          <li><a href="{{ '/job-search/browse-jobs' | relative_url }}">The NZIC Job Board</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4: About NZIC -->
+      <div>
+        <div class="footer-col-heading" style="font-family:var(--font-heading);font-weight:700;color:var(--navy);margin-bottom:1rem;font-size:.95rem;text-transform:uppercase;letter-spacing:.05em;">About NZIC</div>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.5rem;">
+          <li><a href="{{ '/about/who-we-are' | relative_url }}">New Zealand Immigration Concepts</a></li>
+          <li><a href="{{ '/our-immigration-and-job-hunt-webinar' | relative_url }}">Our Immigration and Job Hunt Webinar</a></li>
+          <li><a href="{{ '/about/happy-clients' | relative_url }}">Happy Clients</a></li>
+        </ul>
+      </div>
+
     </div>
-    <div class="footer-bottom">
-      <span>&copy; {{ 'now' | date: "%Y" }} New Zealand Immigration Concepts Ltd. All rights reserved.</span>
-      <span aria-hidden="true">·</span>
+
+    <div class="footer-bottom" style="border-top:1px solid var(--border);padding-top:1.25rem;">
+      <span>Copyright New Zealand Immigration Concepts Ltd 2026</span>
+      <span aria-hidden="true">&middot;</span>
       <a href="{{ '/privacy-policy' | relative_url }}">Privacy Policy</a>
-      <span aria-hidden="true">·</span>
+      <span aria-hidden="true">&middot;</span>
       <a href="{{ '/disclaimer' | relative_url }}">Disclaimer</a>
-      <span aria-hidden="true">·</span>
-      <a href="{{ '/about/contact-us' | relative_url }}">Contact Us</a>
-      <span aria-hidden="true">·</span>
+      <span aria-hidden="true">&middot;</span>
+      <a href="{{ '/about/contact-us' | relative_url }}">Contact us</a>
+      <span aria-hidden="true">&middot;</span>
       <div class="footer-social">
-        <a href="https://www.linkedin.com/company/nzic" target="_blank" rel="noopener noreferrer" aria-label="NZIC on LinkedIn">in</a>
-        <a href="https://www.instagram.com/nzimmigration" target="_blank" rel="noopener noreferrer" aria-label="NZIC on Instagram">📷</a>
+        <a href="https://www.linkedin.com/company/new-zealand-immigration-concepts/" target="_blank" rel="noopener noreferrer" aria-label="NZIC on LinkedIn">LinkedIn</a>
+        <a href="https://www.instagram.com/newzealand.immigration/" target="_blank" rel="noopener noreferrer" aria-label="NZIC on Instagram">Instagram</a>
       </div>
     </div>
   </div>

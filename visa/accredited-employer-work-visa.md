@@ -31,7 +31,9 @@ The AEWV requires the employer to pay at least the **New Zealand median wage** f
 
 ## Pathway to residence
 
-After working in New Zealand on an AEWV for a qualifying period, workers in eligible occupations may be able to apply for residence under the [Green List](/visa/the-green-list) or the [Skilled Migrant Category](/visa/skilled-migrant-category).
+After working in New Zealand on an AEWV for a qualifying period, workers in eligible occupations may apply for residence under the [Green List](/visa/the-green-list) or the [Skilled Migrant Category](/visa/skilled-migrant-category).
+
+Workers in roles that pay **NZD $79,560 or more** per year may also qualify for the Residence from Work Visa pathway after a minimum period of employment on an AEWV.
 
 ## For workers
 

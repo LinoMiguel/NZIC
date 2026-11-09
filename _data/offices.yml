@@ -1,10 +1,13 @@
-# Office details — addresses to be confirmed by owner
-- name: Nelson
-  address: "[Street address TBC], Nelson, New Zealand"
-  hours: "Monday–Friday: 9:00 am – 5:00 pm NZ time"
-  maps_url: "https://maps.google.com/?q=Nelson+New+Zealand"
+- city: Nelson
+  label: "Nelson (South Island)"
+  address: "NZIC House, 137 Milton Street, Nelson, New Zealand"
+  hours: "Mon–Thu 8:30 am–4:00 pm · Fri 8:30 am–2:00 pm"
+  hours_note: "NZ time"
+  maps_link: "https://maps.google.com/?q=137+Milton+Street+Nelson+New+Zealand"
 
-- name: Wellington
-  address: "[Street address TBC], Wellington, New Zealand"
-  hours: "Monday–Friday: 9:00 am – 5:00 pm NZ time"
-  maps_url: "https://maps.google.com/?q=Wellington+New+Zealand"
+- city: Wellington
+  label: "Wellington (North Island)"
+  address: "ANZAC House, 181 Willis Street, CBD Wellington, New Zealand"
+  hours: "Mon–Fri 8:30 am–4:30 pm"
+  hours_note: "NZ time"
+  maps_link: "https://maps.google.com/?q=181+Willis+Street+Wellington+New+Zealand"

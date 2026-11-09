@@ -1,23 +1,65 @@
-# Team members — names, roles and IAA licence numbers to be provided by owner (OQ-012)
-# Placeholder structure below
+- name: Dr. Carsten Hallwass
+  role: Director & Licensed Immigration Adviser
+  bio: "PhD and LLB, University of Kiel. Practised law in Bremen 1988–1994. Founded NZIC in Nelson in 1994. Principal Licensed Immigration Adviser."
+  licence_number: "200900212"
+  languages: "English, German"
 
-- name: "[Principal Adviser — name TBC]"
-  role: Principal Licensed Immigration Adviser
-  qualifications: "[Qualifications TBC]"
-  licence_number: "[IAA Licence No. TBC]"
-  bio: "Our Principal Adviser brings decades of experience in New Zealand immigration law and has helped thousands of clients achieve residence. Please contact us for more information."
-  location: Nelson
-
-- name: "[Licensed Adviser — name TBC]"
-  role: Licensed Immigration Adviser
-  qualifications: "[Qualifications TBC]"
-  licence_number: "[IAA Licence No. TBC]"
-  bio: "With extensive experience in skilled migrant and employer-sponsored visa categories."
-  location: Wellington
-
-- name: "[Job Search Consultant — name TBC]"
-  role: Job Search Consultant
-  qualifications: "[Qualifications TBC]"
+- name: Martina Könnecke
+  role: Founding Director
+  bio: "LLB, University of Kiel. Admitted to the bar in Germany 1987. Co-founded NZIC in Nelson in 1994."
   licence_number: null
-  bio: "Specialises in helping internationally trained professionals find employment in New Zealand, including access to the hidden job market."
-  location: Nelson
+  languages: "English, German"
+
+- name: Maj Hallwass
+  role: Director of Job Search NZ & International Talent Acquisition
+  bio: "BCom, Victoria University of Wellington. Opened the Wellington branch in 2018. Leads the NZIC Job Search programme."
+  licence_number: null
+  languages: "English, German"
+
+- name: Apekshi Jayawardena
+  role: Licensed Immigration Adviser
+  bio: "LLB Hons, University of Colombo."
+  licence_number: "201800790"
+  languages: "English, Sinhalese"
+
+- name: Penny Taylor
+  role: Licensed Immigration Adviser
+  bio: "Qualified Legal Executive from England. CELTA certificate. Migrated to Nelson from the UK in 2005."
+  licence_number: "202000093"
+  languages: "English"
+
+- name: Katrina Horgan
+  role: Team Leader Operations
+  bio: "25 years in the UK, including 22 years at the Walt Disney Company as Executive Director of Operations. Returned to NZ in 2016."
+  licence_number: null
+  languages: "English"
+
+- name: Sara Airoldi
+  role: Job Search Strategist and Connector
+  bio: "Master's in Social Anthropology, London. SaaS, AI, and technology background. Joined NZIC 2026."
+  licence_number: null
+  languages: "English, Italian"
+
+- name: Meghann Voigt
+  role: Job Search Strategist and Connector
+  bio: "Postgraduate Diploma in Management and BSocSci, University of Cape Town. HR and recruitment background. Joined NZIC 2026. Based in Wellington–Porirua."
+  licence_number: null
+  languages: "English"
+
+- name: Lino Miguel, M.Sc.
+  role: Job Search Adviser for Engineering Professionals
+  bio: "BSc and MSc Aeronautical Engineering, Universidade da Beira Interior, Portugal. NZ Airworthiness and Certification Engineer since 2018."
+  licence_number: null
+  languages: "English, Portuguese, Italian, Spanish"
+
+- name: Dr. David Moeller
+  role: Job Search Adviser for Medical Professionals
+  bio: "Former GP in Germany. Now NZ GP and citizen. MBA with Distinction. Honorary Senior Lecturer, University of Waikato. Developed 'The GP NZ Ready' programme."
+  licence_number: null
+  languages: "English, German"
+
+- name: Leah Shopneck
+  role: Visa Team Support
+  bio: "BA Geography, University of Mary Washington. 8 years on yachts with 100-ton Off-Shore Captain's Licence. In the immigration field since 2018."
+  licence_number: null
+  languages: "English"

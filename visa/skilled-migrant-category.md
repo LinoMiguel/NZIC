@@ -11,17 +11,35 @@ inz_source: "https://www.immigration.govt.nz/new-zealand-visas/apply-for-a-visa/
 
 The Skilled Migrant Category (SMC) is New Zealand's principal residence pathway for internationally trained workers. It uses a points system to assess whether an applicant has the skills, qualifications, and experience New Zealand needs.
 
+## Three SMC pathways
+
+INZ recognises three distinct SMC pathways:
+
+1. **Points-based pathway** — requires a minimum of 6 points (see table below)
+2. **Skilled Work Experience pathway** — 5 years of skilled work experience in total, with at least 2 years in New Zealand
+3. **Trades and Technician pathway** — a recognised qualification plus 4 years of experience, with at least 18 months of that experience in New Zealand
+
+Your NZIC adviser will help you identify which pathway best fits your profile.
+
 ## Key eligibility criteria
 
 To be considered under the SMC:
 
 - You must be **55 years of age or younger** at the time of application
 - You must meet INZ's health and character requirements
-- You must have enough points to be invited to apply
+- You must qualify under one of the three pathways above
 
-## Points table
+## Points table (points-based pathway)
 
-Points are claimed for factors including employment, qualifications, and age. The table below reflects INZ's criteria as of the last-reviewed date shown above. Always check the [official INZ source](https://www.immigration.govt.nz) for the most current figures.
+Points are scored against the median wage. As of the last-reviewed date, the thresholds are:
+
+| Points | Hourly rate threshold | Basis |
+|--------|----------------------|-------|
+| 1 point | NZD $50.34/hour | 1.5× the median wage |
+| 2 points | NZD $67.12/hour | 2× the median wage |
+| 3 points | NZD $100.68/hour | 3× the median wage |
+
+Additional points are available for:
 
 | Factor | Points |
 |--------|--------|

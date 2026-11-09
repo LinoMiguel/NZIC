@@ -18,6 +18,8 @@ Workers in Tier 1 occupations can apply for residence directly, without first ne
 
 Common Tier 1 occupations include many medical specialists, some engineering roles, and senior trade supervisors. Check the [official INZ list](https://www.immigration.govt.nz) for the current Tier 1 occupations.
 
+INZ projects **80% of Tier 1 (Straight to Residence) applications processed within 5 months**.
+
 ### Tier 2 — Work to residence
 Workers in Tier 2 occupations can get an Accredited Employer Work Visa and, after two years of employment in that role, apply for residence under the Green List pathway.
 

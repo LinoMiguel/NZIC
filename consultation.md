@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Request a Consultation
-description: Request a one-on-one consultation with a NZIC Licensed Immigration Adviser to discuss your New Zealand visa options in detail.
+description: Request a one-on-one consultation with Dr. Carsten Hallwass, Principal Licensed Immigration Adviser at NZIC.
 permalink: /consultation/
 ---
 
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <div class="container">
     <ol>
-      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
       <li><span aria-current="page">Consultation</span></li>
     </ol>
   </div>
@@ -17,53 +17,40 @@ permalink: /consultation/
 <div class="page-hero">
   <div class="container">
     <h1>Request a One-on-One Consultation</h1>
-    <p class="lead">A private session with a Licensed Immigration Adviser — your questions answered in detail, your situation assessed accurately.</p>
+    <p class="lead">A private consultation with Dr. Carsten Hallwass, Principal Licensed Immigration Adviser — your questions answered in detail.</p>
   </div>
 </div>
 
 <section class="section">
-  <div class="container">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;">
+  <div class="container" style="max-width:700px;">
 
-      <div>
-        <div class="alert alert-info" style="margin-bottom:1.5rem;">
-          ⚠️ Consultation fee, format, and duration to be confirmed by owner (OQ-010). The description below is a placeholder.
-        </div>
+    <p style="margin-bottom:2rem;color:var(--text-light);">Use the form below to contact us and request a meeting with Dr. Carsten Hallwass. We will email you to arrange a time that suits your time zone.</p>
 
-        <!-- REQ-269: session details -->
-        <h2 style="font-family:var(--font-heading);font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:1rem;">About the consultation</h2>
-        <div class="fusion-block" style="margin-bottom:12px;">
-          <div class="fusion-icon">👤</div>
-          <div><div class="fusion-title">Who you meet with</div><div class="fusion-desc">A Licensed Immigration Adviser registered with the IAA — the same team who reviews your free assessment.</div></div>
-        </div>
-        <div class="fusion-block" style="margin-bottom:12px;">
-          <div class="fusion-icon">💻</div>
-          <div><div class="fusion-title">Format</div><div class="fusion-desc">Video call (Zoom or Teams), phone, or in-person at our Nelson or Wellington office. [Format to be confirmed by owner.]</div></div>
-        </div>
-        <div class="fusion-block" style="margin-bottom:12px;">
-          <div class="fusion-icon">⏱️</div>
-          <div><div class="fusion-title">Duration</div><div class="fusion-desc">[Duration to be confirmed by owner.]</div></div>
-        </div>
-        <div class="fusion-block" style="margin-bottom:12px;">
-          <div class="fusion-icon">💰</div>
-          <div><div class="fusion-title">Fee</div><div class="fusion-desc">[Fee to be confirmed by owner — may be free or paid. OQ-010.]</div></div>
-        </div>
+    <form action="https://formspree.io/f/REPLACE_ME" method="POST" novalidate>
+      <div class="form-group">
+        <label class="form-label" for="c-name">Name <span class="req" aria-hidden="true">*</span></label>
+        <input class="form-input" type="text" id="c-name" name="name" required autocomplete="name">
+        <div class="form-error">Please enter your name</div>
       </div>
-
-      <!-- Consultation form (REQ-269 to REQ-270) -->
-      <div>
-        <h2 style="font-family:var(--font-heading);font-size:1.4rem;font-weight:700;color:var(--navy);margin-bottom:1.5rem;">Request your consultation</h2>
-        <form action="https://formspree.io/f/REPLACE_ME" method="POST" novalidate>
-          <div class="form-group"><label class="form-label" for="c-name">Name <span class="req">*</span></label><input class="form-input" type="text" id="c-name" name="name" required></div>
-          <div class="form-group"><label class="form-label" for="c-email">Email <span class="req">*</span></label><input class="form-input" type="email" id="c-email" name="email" required></div>
-          <div class="form-group"><label class="form-label" for="c-msg">What would you like to discuss? <span class="req">*</span></label><textarea class="form-textarea" id="c-msg" name="message" rows="5" required></textarea></div>
-          <div class="form-group"><label class="form-label" for="c-tz">Your time zone (optional)</label><input class="form-input" type="text" id="c-tz" name="timezone" placeholder="e.g. GMT+5:30, EST, CEST"></div>
-          <p class="form-required-note"><span class="req">*</span> Required field</p>
-          <button class="btn btn-primary" type="submit">Request Consultation</button>
-          <p style="font-size:.82rem;color:var(--text-muted);margin-top:.75rem;">We will email you within [X] business days to arrange a time. (REQ-270 — timeframe to be confirmed.)</p>
-        </form>
+      <div class="form-group">
+        <label class="form-label" for="c-email">Email <span class="req" aria-hidden="true">*</span></label>
+        <input class="form-input" type="email" id="c-email" name="email" required autocomplete="email">
+        <div class="form-error">Please enter a valid email address</div>
       </div>
+      <div class="form-group">
+        <label class="form-label" for="c-msg">Message <span class="req" aria-hidden="true">*</span></label>
+        <textarea class="form-textarea" id="c-msg" name="message" rows="5" required placeholder="Tell us briefly about your situation and what you would like to discuss."></textarea>
+        <div class="form-error">Please enter your message</div>
+      </div>
+      <p class="form-required-note"><span class="req">*</span> Required field</p>
+      <button class="btn btn-primary" type="submit">Request Consultation</button>
+    </form>
 
+    <div id="form-success" style="display:none;" role="alert">
+      <div class="alert alert-info" style="margin-top:1.5rem;">
+        Thank you for contacting us to request a meeting. We will email you to arrange a time that suits your time zone.
+      </div>
     </div>
+
   </div>
 </section>

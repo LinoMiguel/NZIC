@@ -8,7 +8,7 @@ permalink: /retirement-in-new-zealand/
 <nav class="breadcrumbs" aria-label="Breadcrumb">
   <div class="container">
     <ol>
-      <li><a href="{{ '/' | relative_url }}">🏠 Home</a></li>
+      <li><a href="{{ '/' | relative_url }}">Home</a></li>
       <li><a href="{{ '/visa' | relative_url }}">Visa Service</a></li>
       <li><span aria-current="page">Retirement in New Zealand</span></li>
     </ol>
@@ -24,13 +24,16 @@ permalink: /retirement-in-new-zealand/
 
 <section class="section">
   <div class="content-container">
-    <div class="last-reviewed">📅 Last reviewed: November 2026 · <a href="https://www.immigration.govt.nz" target="_blank" rel="noopener noreferrer">Official INZ source ↗</a></div>
+    <div class="last-reviewed">Last reviewed: November 2026 &middot; <a href="https://www.immigration.govt.nz" target="_blank" rel="noopener noreferrer">Official INZ source &#8599;</a></div>
+
+    <blockquote style="border-left:4px solid var(--orange);padding-left:1.25rem;margin:1.5rem 0 2rem;font-style:italic;color:var(--text-light);font-size:1.1rem;">
+      "There is no 'one-fits-all' visa pathway to retirement in New Zealand." — Dr. Carsten Hallwass
+    </blockquote>
 
     <div class="alert alert-warning" style="margin-bottom:2rem;">
       Financial thresholds and eligibility criteria set by INZ change periodically. The figures below were accurate as of the last-reviewed date shown. Always verify current requirements at the official INZ source or with a Licensed Immigration Adviser.
     </div>
 
-    <!-- REQ-161: retirement visa thresholds table -->
     <h2 style="font-family:var(--font-heading);font-size:1.5rem;font-weight:700;color:var(--navy);margin-bottom:1rem;">Retirement visa options</h2>
     <div class="prose" style="overflow-x:auto;">
       <table>
@@ -46,43 +49,50 @@ permalink: /retirement-in-new-zealand/
         <tbody>
           <tr>
             <td><strong>Temporary Retirement Visitor Visa</strong></td>
-            <td>NZD 750,000 settlement funds</td>
-            <td>NZD 60,000 per year</td>
+            <td>NZD $750,000 investment + NZD $500,000 settlement funds</td>
+            <td>NZD $60,000 per year</td>
             <td>66+</td>
             <td>Temporary (2 years, renewable). No work rights. No residence pathway.</td>
           </tr>
           <tr>
             <td><strong>Parent Retirement Resident Visa</strong></td>
-            <td>NZD 1 million investment in NZ</td>
-            <td>NZD 60,000 per year</td>
+            <td>NZD $1,000,000 investment in NZ for 4 years + NZD $500,000 settlement funds</td>
+            <td>NZD $60,000 per year</td>
             <td>No age limit</td>
             <td>Requires a NZ citizen or resident child sponsor. Limited places — ballot may apply.</td>
           </tr>
           <tr>
             <td><strong>Active Investor Plus — Growth</strong></td>
-            <td>NZD 5 million in growth investments</td>
+            <td>NZD $5,000,000 over 3 years</td>
             <td>None specified</td>
             <td>None</td>
             <td>Must invest directly in NZ businesses. Active involvement required.</td>
           </tr>
           <tr>
             <td><strong>Active Investor Plus — Balanced</strong></td>
-            <td>NZD 15 million across investment categories</td>
+            <td>NZD $10,000,000 over 5 years</td>
             <td>None specified</td>
             <td>None</td>
             <td>Wider range of acceptable investment types including listed equities.</td>
           </tr>
           <tr>
-            <td><strong>Business Investor Resident Visa</strong></td>
-            <td>NZD 3 million investment in NZ</td>
+            <td><strong>Business Investor — 3-year pathway</strong></td>
+            <td>NZD $1,000,000 in existing NZ business</td>
             <td>None specified</td>
             <td>None</td>
-            <td>Requires a business plan and significant business experience. Transitional path includes a 3-year work visa.</td>
+            <td>Requires a business plan and significant business experience.</td>
+          </tr>
+          <tr>
+            <td><strong>Business Investor — fast-track (12 months)</strong></td>
+            <td>NZD $2,000,000</td>
+            <td>None specified</td>
+            <td>None</td>
+            <td>Accelerated pathway for significant investors.</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <p style="font-size:.82rem;color:var(--text-muted);margin-top:.5rem;">Sources: <a href="https://www.immigration.govt.nz" target="_blank" rel="noopener noreferrer">Immigration New Zealand ↗</a>. Figures are indicative — verify current thresholds before proceeding.</p>
+    <p style="font-size:.82rem;color:var(--text-muted);margin-top:.5rem;">Sources: <a href="https://www.immigration.govt.nz" target="_blank" rel="noopener noreferrer">Immigration New Zealand &#8599;</a>. Figures are indicative — verify current thresholds before proceeding.</p>
 
     <div class="prose" style="margin-top:2rem;">
       <h2>What "settlement funds" means</h2>
