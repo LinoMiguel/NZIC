@@ -1,0 +1,29 @@
+:root {
+  --color-primary: #0d4292;
+  --color-primary-dark: #0a3270;
+  --color-accent: #f88c30;
+  --color-text: #1a202c;
+  --color-text-muted: #4a5568;
+  --color-bg: #ffffff;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --max-width: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body { font-family: var(--font-body), system-ui, sans-serif; color: var(--color-text); background: var(--color-bg); line-height: 1.6; }
+
+.skip-link { position: absolute; top: -40px; left: 0; background: var(--color-primary); color: #fff; padding: 8px 16px; z-index: 100; }
+.skip-link:focus { top: 0; }
+
+.container { max-width: var(--max-width); margin: 0 auto; padding: 0 1.5rem; }
+
+header { background: var(--color-primary); padding: 1rem 0; }
+.site-title { color: #fff; text-decoration: none; font-family: var(--font-heading), sans-serif; font-weight: 700; font-size: 1.25rem; }
+
+.hero { padding: 5rem 0; text-align: center; background: #f0f4f8; }
+.hero h1 { font-family: var(--font-heading), sans-serif; font-size: clamp(2rem, 5vw, 3.5rem); color: var(--color-primary); margin-bottom: 1rem; }
+.hero p { font-size: 1.1rem; color: var(--color-text-muted); }
+
+footer { background: var(--color-primary-dark); color: rgba(255,255,255,0.8); text-align: center; padding: 1.5rem 0; font-size: 0.9rem; margin-top: 4rem; }
