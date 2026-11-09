@@ -1,0 +1,50 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="NZIC — New Zealand Immigration Consultancy">
+  <main id="main-content">
+    <header class="hero">
+      <div class="container">
+        <h1>NZIC</h1>
+        <p class="tagline">New Zealand Immigration Consultancy</p>
+        <p class="sub">Expert advice for your journey to New Zealand.</p>
+        <a href="mailto:lino.d.r.miguel@gmail.com" class="cta">Get a free assessment</a>
+      </div>
+    </header>
+
+    <section class="services" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">How we can help</h2>
+        <ul class="service-grid" role="list">
+          <li>
+            <h3>Skilled Migrant</h3>
+            <p>Guidance on points-based residence visas for professionals and tradespeople.</p>
+          </li>
+          <li>
+            <h3>Partner &amp; Family</h3>
+            <p>Reuniting families through partner, dependent child, and parent visas.</p>
+          </li>
+          <li>
+            <h3>Work Visas</h3>
+            <p>Accredited employer work visas and Green List occupations.</p>
+          </li>
+          <li>
+            <h3>Investor &amp; Entrepreneur</h3>
+            <p>Business and investor visa pathways for those bringing capital or innovation.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>&copy; {new Date().getFullYear()} NZIC. All rights reserved.</p>
+        <nav aria-label="Footer">
+          <a href="/NZIC/privacy">Privacy Policy</a>
+          <a href="/NZIC/terms">Terms of Use</a>
+        </nav>
+      </div>
+    </footer>
+  </main>
+</Layout>
